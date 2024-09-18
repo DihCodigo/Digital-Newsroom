@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #0066cc;
+    --accent-color: #99ccff;   
+
+    --neutral-color-light: #F5F5F5;
+    --neutral-color-dark: #333333;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+
+    --text-color-primary: var(--black-color);
+    --text-color-secondary: #666666;
+    --text-color-accent: var(--white-color);
+
+    --background-color-light: var(--neutral-color-light);
+    --background-color-dark: var(--neutral-color-dark);
+    --background-color-accent: var(--white-color);
+
+    --button-bg-primary: var(--primary-color);
+    --button-bg-secondary: var(--secondary-color);
+    --button-text-color: var(--white-color);
+    --link-color: var(--primary-color);
+    --link-hover-color: var(--secondary-color);
+
+    --border-color-light: #DDDDDD;
+    --border-color-dark: #444444;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0px 6px 12px rgba(0, 0, 0, 0.2);
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    --font-family-sans: 'Helvetica Neue', sans-serif;
+    --font-family-serif: 'Georgia', serif;
+    --font-family-mono: 'Courier New', monospace;
+
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 24px;
+    --font-size-xl: 32px;
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    --transition-fast: 0.2s ease-in-out;
+    --transition-normal: 0.4s ease-in-out;
+    --transition-slow: 0.6s ease-in-out;
+
+    --hover-scale: 1.05;
+    --hover-brightness: 0.9;
+
+    --animation-fade-in: fadeIn 0.5s ease-in-out forwards;
+    --animation-slide-up: slideUp 0.5s ease-in-out forwards;
+    --animation-bounce: bounce 0.8s infinite;
+
+    --max-width-content: 1200px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

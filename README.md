@@ -1,5 +1,4 @@
 # Digital-Newsroom
-/Digital-Newsroom
 │
 ├── /app
 │   ├── /controllers
@@ -10,13 +9,13 @@
 │   │   └── UserModel.js
 │   ├── /views
 │   │   ├── /home
-│   │   │   └── index.html
+│   │   │   └── index.ejs
 │   │   ├── /news
-│   │   │   └── article.html
-│   │   │   └── list.html
+│   │   │   └── article.ejs
+│   │   │   └── list.ejs
 │   │   ├── /partials
-│   │   │   └── header.html
-│   │   │   └── footer.html
+│   │   │   └── header.ejs
+│   │   │   └── footer.ejs
 │   ├── /middlewares
 │   │   └── authMiddleware.js
 │   ├── /helpers
@@ -31,6 +30,12 @@
 ├── /public
 │   ├── /css
 │   │   └── style.css
+│   │   └── header
+│   │       └── header.css
+│   │   └── home
+│   │       └── home.css
+│   │   └── footer
+│   │       └── footer.css
 │   ├── /js
 │   │   └── app.js
 │   └── /images

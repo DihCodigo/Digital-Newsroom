@@ -1,17 +1,16 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
 
-// Middleware para servir arquivos estáticos
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'app/views'));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Configuração das rotas
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'app', 'views', 'home', 'index.html'));
+    res.render('home/index');
 });
 
-// Iniciar o servidor
-app.listen(port, () => {
-  console.log(`Servidor rodando na porta ${port}`);
+app.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000');
 });
