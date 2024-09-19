@@ -10,7 +10,7 @@
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-bold);
     color: var(--primary-color);
-    text-shadow: 1px 1px 5px var(--white-color); 
+    text-shadow: 1px 1px 5px var(--white-color);
     display: flex;
     gap: 5px;
 }
@@ -29,7 +29,7 @@
 
 @media (max-width: 768px) {
     .logo-text {
-        font-size: var(--font-size-md); 
+        font-size: var(--font-size-md);
     }
 }
 
@@ -142,7 +142,7 @@ header {
         display: none;
         padding: 10px 0;
         opacity: 0;
-        transform: translateY(-50px); 
+        transform: translateY(-50px);
         transition: all 0.7s ease;
     }
 
